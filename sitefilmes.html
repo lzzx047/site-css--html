@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Completo - Filmes, Livros e Música</title>
+
+    <style>
+        /* ======== ESTILOS GERAIS ======== */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+
+        /* ======== FILMES — FLEXBOX ======== */
+        #filmes {
+            background-color: #e6eeff;
+        }
+
+        #filmes h1 {
+            color: #2643d6;
+        }
+
+        .container-filmes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .card-filme {
+            width: 220px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #bfc4ff;
+            box-shadow: 2px 2px 5px #aab8ff;
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+        /* ======== LIVROS — GRID ======== */
+        #livros {
+            background-color: #fff4dc;
+        }
+
+        #livros h1 {
+            color: #d17b00;
+        }
+
+        .grid-livros {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .grid-item {
+            background-color: white;
+            padding: 18px;
+            text-align: center;
+            border-radius: 6px;
+            border: 1px solid #e2c89b;
+            font-weight: bold;
+            box-shadow: 2px 2px 4px #e6cfaa;
+        }
+
+
+        /* ======== MÚSICA — LISTA SIMPLES ======== */
+        #musica {
+            background-color: #e3ffe9;
+        }
+
+        #musica h1 {
+            color: #239448;
+        }
+
+        .lista-musica {
+            list-style: none;
+            padding: 0;
+            max-width: 400px;
+            margin: 30px auto;
+        }
+
+        .lista-musica li {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            text-align: center;
+            border: 1px solid #a9e5b6;
+            font-weight: bold;
+            box-shadow: 2px 2px 4px #ccecd4;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ======== MENU DE NAVEGAÇÃO ======== -->
+    <nav>
+        <a href="#filmes">Filmes</a>
+        <a href="#livros">Livros</a>
+        <a href="#musica">Música</a>
+    </nav>
+
+    <!-- ======== SEÇÃO FILMES ======== -->
+    <section id="filmes">
+        <h1>🎬 Filmes Recomendados</h1>
+        <p>Aqui estão alguns filmes que eu recomendo:</p>
+
+        <div class="container-filmes">
+            <div class="card-filme">Gente Grande</div>
+            <div class="card-filme">Gente Grande 2</div>
+            <div class="card-filme">Gente Grande 3</div>
+            <div class="card-filme">Os Novatos</div>
+            <div class="card-filme">Projeto X</div>
+            <div class="card-filme">Velozes E Furiosos</div>
+            <div class="card-filme">Interestelar</div>
+            <div class="card-filme">Arremessando Alto</div>
+            <div class="card-filme">Stranger Things</div>
+            <div class="card-filme">La Casa De Papel</div>
+        </div>
+    </section>
+
+    <!-- ======== SEÇÃO LIVROS ======== -->
+    <section id="livros">
+        <h1>📚 Livros Recomendados</h1>
+        <p>Alguns livros que eu recomendo:</p>
+
+        <div class="grid-livros">
+            <div class="grid-item">Diario De Um Banana</div>
+            <div class="grid-item">Diario De Um Banana 2</div>
+            <div class="grid-item">Diario De Um Banana 3</div>
+            <div class="grid-item">Diario De Um Banana 4</div>
+            <div class="grid-item">Diario De Um Banana 5</div>
+            <div class="grid-item">Diario De Um Banana 6</div>
+            <div class="grid-item">Diario De Um Banana 7</div>
+            <div class="grid-item">Diario De Um Banana 8</div>
+            <div class="grid-item">Diario De Um Banana 9</div>
+            <div class="grid-item">Diario De Um Banana 10</div>
+        </div>
+    </section>
+
+    <!-- ======== SEÇÃO MÚSICA ======== -->
+    <section id="musica">
+        <h1>🎵 Cantores e Bandas</h1>
+        <p>Alguns artistas que gosto de ouvir:</p>
+
+        <ul class="lista-musica">
+            <li>veigh</li>
+            <li>Matuê</li>
+            <li>Alee</li>
+            <li>KayBlack</li>
+            <li>Gigi D'Agostino</li>
+            <li>Bradockdan</li>
+            <li>MC Kevin</li>
+            <li>MC IG</li>
+            <li>MC Ryan SP</li>
+            <li>Henrique e Juliano</li>
+        </ul>
+    </section>
+
+    <footer>
+        Site criado como exercício de HTML e CSS — por [Luiz Fernando]
+    </footer>
+
+</body>
+</html>
