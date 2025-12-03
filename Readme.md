@@ -1,98 +1,100 @@
-📘 README – Site de Filmes, Livros e Música
+# 📘 Projeto: Site de Filmes, Livros e Música
 
-Este projeto é um site simples desenvolvido utilizando HTML e CSS, com foco no uso das tecnologias Flexbox e CSS Grid para organizar o conteúdo.
-O objetivo é demonstrar como estruturar páginas responsivas e esteticamente agradáveis com técnicas modernas de layout.
+Este projeto é uma página web simples criada utilizando **HTML** e **CSS**, com foco em estrutura, organização de conteúdo e estilos usando **Flexbox**, **Grid** e **fontes personalizadas** para cada seção.
 
-🏗️ Tecnologias Utilizadas
-🔹 HTML5
+---
 
-Responsável pela estruturação do conteúdo em diferentes seções:
+## 🎯 Objetivo do Projeto
 
-Menu de navegação usando <nav>
+Criar um site organizado com três áreas principais:
 
-Seções separadas para Filmes, Livros e Música
+* **Filmes**
+* **Livros**
+* **Música**
 
-Uso de listas, divisões e títulos organizados semanticamente
+Cada uma dessas páginas/seções utiliza um layout diferente e uma fonte própria para destacar visualmente os conteúdos.
 
-🎨 CSS3
+---
 
-O projeto utiliza CSS para estilização visual e organização do layout.
+## 🛠️ Tecnologias Utilizadas
 
-🔸 Estilos Gerais
+### **HTML5**
 
-Fonte base configurada (Arial, sans-serif)
+Usado para estruturar o conteúdo do site:
 
-Paletas de cores personalizadas para cada seção
+* `nav` para o menu superior
+* `section` para separar os temas (filmes, livros, música)
+* `div` e `ul` para organização dos itens das listas
 
-Bordas arredondadas, box-shadow e espaçamentos para dar profundidade aos elementos
+### **CSS3**
 
-📦 Flexbox — Seção de Filmes
+O projeto utiliza vários recursos importantes do CSS:
 
-A seção Filmes utiliza CSS Flexbox, que facilita organizar itens horizontalmente e ajustá-los conforme o espaço disponível.
+#### ✔️ **Flexbox (para FILMES)**
 
-Principais propriedades usadas:
+Usado na classe `.filmes-container` para organizar os cards de filmes lado a lado, com quebra automática e espaçamento dinâmico.
 
-display: flex;
+#### ✔️ **CSS Grid (para LIVROS e MÚSICA)**
 
-flex-wrap: wrap;
+* **Livros**: grid responsivo com `auto-fit` e `minmax()`
+* **Música**: grid vertical simples para lista mais elegante
 
-justify-content: center;
+#### ✔️ **Fontes Diferentes para Cada Seção**
 
-gap: 20px;
+Cada página possui sua própria tipografia:
 
-Essas propriedades permitiram criar uma grade flexível que se adapta ao tamanho da tela.
+* **Filmes** → `Bebas Neue`
+* **Livros** → `Merriweather`
+* **Música** → `Poppins`
 
-🧱 CSS Grid — Seção de Livros
+Isso cria identidade visual única em cada área.
 
-A seção Livros utiliza CSS Grid, ideal para criar grades bidimensionais de forma simples.
+#### ✔️ **Cores e Estilização Individual**
 
-Propriedades utilizadas:
+Cada seção possui seu próprio esquema de cores, sombras e bordas personalizadas.
 
-display: grid;
+---
 
-grid-template-columns: repeat(3, 1fr);
+## 📂 Estrutura do Projeto
 
-gap: 18px;
+```
+index.html        # Página principal
+style.css         # Estilizações (inseridas em <style> no projeto)
+README.md         # Documentação do projeto
+```
 
-Com isso, foi criada uma grade uniforme com 3 colunas para exibir os livros recomendados.
+---
 
-🎵 Lista Simples — Seção de Música
+## 📸 Layouts
 
-A seção Música utiliza uma lista estilizada com:
+### 🎬 Filmes (Flexbox)
 
-list-style: none;
+* Cards maiores, organizados em linhas flexíveis
+* Fonte grande e espaçada
+* Fundo azul claro
 
-Cartões brancos com sombra
+### 📚 Livros (Grid)
 
-Bordas arredondadas para melhorar a estética
+* Grid responsivo em múltiplas colunas
+* Estilo clássico e serifado
+* Fundo bege
 
-Essa parte do site não usa flexbox ou grid, apenas CSS básico para formatar uma lista vertical.
+### 🎵 Música (Grid Vertical)
 
-🧭 Navegação
+* Grid de uma coluna
+* Fonte moderna
+* Cartões simples e suaves
 
-O menu superior permite acesso rápido a cada seção usando links âncora (href="#filmes" por exemplo).
-Ele permanece no topo e é estilizado com:
+---
 
-Cor de fundo escura
+## 👨‍💻 Autor
 
-Texto branco
+**Luiz Fernando**
 
-Efeito hover com sublinhado
+Projeto criado como exercício de HTML e CSS.
 
-🦶 Rodapé
+---
 
-Inclui um rodapé simples com:
+## ✔️ Licença
 
-Fundo escuro
-
-Texto centralizado
-
-Informações sobre o autor
-
-📌 Resumo do que foi aprendido;
-✔ Uso de Flexbox para organização unidimensional (filmes)
-✔ Uso de CSS Grid para organização bidimensional (livros)
-✔ Estilização de listas e seções individuais
-✔ Estruturação semântica com HTML5
-✔ Aplicação de sombras, espaçamentos e cores personalizadas
-✔ Navegação interna com âncoras
+Este projeto é livre para estudos e modificações.

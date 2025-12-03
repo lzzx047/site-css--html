@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site - Filmes, Livros e Música</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background: #111;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 18px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        section {
+            padding: 50px;
+            min-height: 100vh;
+        }
+
+        /* ========================= FILMES — NOVO LAYOUT FLEX E NOVA FONTE ========================= */
+        #filmes {
+            background: #dae7ff;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        #filmes h1 { 
+            color: #1e3fb4; 
+            font-size: 48px;
+        }
+
+        .filmes-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .filme-card {
+            background: #fff;
+            width: 260px;
+            padding: 25px;
+            border-radius: 14px;
+            border: 2px solid #c9d9ff;
+            text-align: center;
+            font-size: 20px;
+            box-shadow: 3px 3px 8px #a5baff;
+        }
+
+
+        /* ========================= LIVROS — GRID COM NOVO ESTILO E FONTE ========================= */
+        #livros {
+            background: #ffefd8;
+            font-family: 'Merriweather', serif;
+        }
+
+        #livros h1 {
+            color: #b86a00;
+            font-size: 40px;
+        }
+
+        .livros-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 22px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .livro-item {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e3c598;
+            font-weight: 600;
+            font-size: 18px;
+            box-shadow: 3px 3px 8px #ead7b8;
+        }
+
+
+        /* ========================= MÚSICA — GRID VERTICAL E FONTE MODERNA ========================= */
+        #musica {
+            background: #e1ffe8;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #musica h1 {
+            color: #1e8f45;
+            font-size: 42px;
+            font-weight: 700;
+        }
+
+        .musica-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            max-width: 450px;
+            margin: auto;
+        }
+
+        .musica-item {
+            background: #fff;
+            padding: 18px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #9be3ad;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 3px 3px 7px #c8eed1;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 18px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#filmes">Filmes</a>
+        <a href="#livros">Livros</a>
+        <a href="#musica">Música</a>
+    </nav>
+
+    <!-- FILMES -->
+    <section id="filmes">
+        <h1>🎬 Filmes Recomendados</h1>
+        <p>Aqui estão alguns filmes recomendados:</p>
+
+        <div class="filmes-container">
+            <div class="filme-card">Gente Grande</div>
+            <div class="filme-card">Gente Grande 2</div>
+            <div class="filme-card">Gente Grande 3</div>
+            <div class="filme-card">Os Novatos</div>
+            <div class="filme-card">Projeto X</div>
+            <div class="filme-card">Velozes e Furiosos</div>
+            <div class="filme-card">Interestelar</div>
+            <div class="filme-card">Arremessando Alto</div>
+            <div class="filme-card">Stranger Things</div>
+            <div class="filme-card">La Casa de Papel</div>
+        </div>
+    </section>
+
+
+    <!-- LIVROS -->
+    <section id="livros">
+        <h1>📚 Livros Recomendados</h1>
+        <p>Alguns livros que eu recomendo:</p>
+
+        <div class="livros-grid">
+            <div class="livro-item">Diário de um Banana 1</div>
+            <div class="livro-item">Diário de um Banana 2</div>
+            <div class="livro-item">Diário de um Banana 3</div>
+            <div class="livro-item">Diário de um Banana 4</div>
+            <div class="livro-item">Diário de um Banana 5</div>
+            <div class="livro-item">Diário de um Banana 6</div>
+            <div class="livro-item">Diário de um Banana 7</div>
+            <div class="livro-item">Diário de um Banana 8</div>
+            <div class="livro-item">Diário de um Banana 9</div>
+            <div class="livro-item">Diário de um Banana 10</div>
+        </div>
+    </section>
+
+
+    <!-- MÚSICA -->
+    <section id="musica">
+        <h1>🎵 Cantores e Bandas</h1>
+        <p>Artistas que gosto de ouvir:</p>
+
+        <div class="musica-grid">
+            <div class="musica-item">Veigh</div>
+            <div class="musica-item">Matuê</div>
+            <div class="musica-item">Alee</div>
+            <div class="musica-item">KayBlack</div>
+            <div class="musica-item">Gigi D'Agostino</div>
+            <div class="musica-item">Bradockdan</div>
+            <div class="musica-item">MC Kevin</div>
+            <div class="musica-item">MC IG</div>
+            <div class="musica-item">MC Ryan SP</div>
+            <div class="musica-item">Henrique e Juliano</div>
+        </div>
+    </section>
+
+    <footer>
+        Site criado como exercício de HTML e CSS — por Luiz Fernando
+    </footer>
+</body>
+</html>
